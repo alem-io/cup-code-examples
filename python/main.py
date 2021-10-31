@@ -14,10 +14,6 @@ while True:
     for i in range(n):
         line = input()
 
-    m = int(input())
-    for i in range(m):
-        line = input()
-
     # use file=sys.stderr to print for debugging
     print("debug code", file=sys.stderr, flush=True)
 
