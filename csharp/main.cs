@@ -27,7 +27,7 @@ class Demo {
          }
          Console.Error.WriteLine("debug code");
 
-         string[] actions = {"left", "right", "up", "down", "bomb"};
+         string[] actions = {"left", "right", "up", "down", "stay"};
          Random rnd = new Random();
          int random_index  = rnd.Next(5);
 

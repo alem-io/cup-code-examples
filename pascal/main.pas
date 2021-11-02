@@ -33,7 +33,7 @@ begin
 			actions[1] := 'right';
 			actions[2] := 'up';
 			actions[3] := 'down';
-			actions[4] := 'bomb';
+			actions[4] := 'stay';
 
 			random_index := Random(5);
 

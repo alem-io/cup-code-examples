@@ -34,7 +34,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "debug code\n")
 
 		// this will choose one of random actions
-		actions := []string{"left", "right", "up", "down", "bomb"}
+		actions := []string{"left", "right", "up", "down", "stay"}
 		randomIndex := rand.Intn(5)
 
 		// bot action

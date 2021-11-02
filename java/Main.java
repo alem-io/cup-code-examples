@@ -40,7 +40,7 @@ import java.util.Random;
 
             System.err.println("debug mode");
 
-            String actions[] = {"left", "right", "up", "down", "bomb"};
+            String actions[] = {"left", "right", "up", "down", "stay"};
             Random r = new Random();
             int random_index = r.nextInt(1000) % 5;
             System.out.println(actions[random_index]);

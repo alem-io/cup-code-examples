@@ -36,7 +36,7 @@ int main() {
         cerr << "debug code" << endl;
 
         // this will choose one of random actions
-        const string actions[] = {"left", "right", "up", "down", "bomb"};
+        const string actions[] = {"left", "right", "up", "down", "stay"};
         int random_index = rand() % 5;
 
         // bot action

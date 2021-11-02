@@ -17,7 +17,7 @@
         }
         fwrite(STDERR, "debug code" . PHP_EOL);
         
-        $actions = ["left", "right", "up", "down", "bomb"];
+        $actions = ["left", "right", "up", "down", "stay"];
         $random_index = random_int(0, 5);
         echo $actions[$random_index] . PHP_EOL;
     }

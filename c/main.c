@@ -30,7 +30,7 @@ int main(void) {
     fprintf(stderr, "debug code\n");
 
     // this will choose one of random actions
-    const char actions[][10] = {"left", "right", "up", "down", "bomb"};
+    const char actions[][10] = {"left", "right", "up", "down", "stay"};
     int random_index = rand() % 5;
 
     // bot action

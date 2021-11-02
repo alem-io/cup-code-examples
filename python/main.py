@@ -18,7 +18,7 @@ while True:
     print("debug code", file=sys.stderr, flush=True)
 
     # this will choose one of random actions
-    actions = ["left", "up", "bomb", "right", "down"]
+    actions = ["left", "up", "stay", "right", "down"]
     random_index = random.randint(0, len(actions) - 1)
 
     print(actions[random_index], flush=True)

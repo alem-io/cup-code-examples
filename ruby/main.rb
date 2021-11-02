@@ -23,7 +23,7 @@ while true do
     end
 
     STDERR.puts "Debug code"
-    actions = ["left", "right", "up", "down", "bomb", "stay"]
+    actions = ["left", "right", "up", "down", "stay"]
     
     STDOUT.puts actions[rand 6]
     STDOUT.flush

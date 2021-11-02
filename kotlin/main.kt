@@ -21,7 +21,7 @@ fun main(args : Array<String>) {
 
         System.err.println("debug mode")
 
-        var actions: Array<String> = arrayOf("left", "right", "up", "down", "bomb")
+        var actions: Array<String> = arrayOf("left", "right", "up", "down", "stay")
         var random_index: Int = (0..4).random()
 
         println(actions[random_index])
