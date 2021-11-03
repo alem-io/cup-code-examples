@@ -1,22 +1,20 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"math/rand"
 	"os"
 )
 
 func main() {
-	scanner := bufio.NewScanner(os.Stdin)
 	for true {
 		var w, h, playerID, tick int
 		fmt.Scan(&w, &h, &playerID, &tick)
 		// read map
 		for i := 0; i < h; i++ {
-			scanner.Scan()
-			line := scanner.Text()
-			fmt.Fprintln(os.Stderr, line)
+			line := ""
+			fmt.Scan(&line)
+			fmt.Fprint(os.Stderr, line, "\n")
 		}
 
 		// number of entities
