@@ -7,43 +7,31 @@ import java.util.Random;
 
         while (true) {
             Scanner scan = new Scanner(System.in);
-            int h, w, player_id, tick, n, p_id, x, y, param_1, param_2;
+            int n, m, player_id, tick, p_id, x, y, param_1, param_2;
             String str, type;
-            
-            w = scan.nextInt();
-            h = scan.nextInt();
+
+            n = scan.nextInt();
             player_id = scan.nextInt();
             tick = scan.nextInt();
             str = scan.nextLine();
             
-            System.err.println(h + "" + w + "" + player_id + "" + tick + "");
+            System.err.println(n + "" + player_id + "" + tick + "");
 
-            for (int i = 0; i < h; i++) {
+            for (int i = 0; i < n; i++) {
                 str = scan.nextLine();
             }
 
-            n = scan.nextInt();
+            m = scan.nextInt();
+            str = scan.nextLine();
+            System.err.println("m:" + m);
             
-            System.err.println("n:" + n);
-            
-            type = scan.nextLine();
-            
-            for (int i = 0; i < n; i++) {
-                type = scan.next();
-                p_id = scan.nextInt();
-                x = scan.nextInt();
-                y = scan.nextInt();
-                param_1 = scan.nextInt();
-                param_2 = scan.nextInt();
-                System.err.println(type + "" + p_id + "" + x + "" + y + "" + param_1 + "" + param_2);
+            for (int i = 0; i < m; i++) {
+                str = scan.nextLine();
             }
 
             System.err.println("debug mode");
 
-            String actions[] = {"left", "right", "up", "down", "stay"};
-            Random r = new Random();
-            int random_index = r.nextInt(1000) % 5;
-            System.out.println(actions[random_index]);
+            System.out.println("100 100 200 200");
         }
     }
 

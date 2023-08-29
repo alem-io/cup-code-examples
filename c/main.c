@@ -3,38 +3,36 @@
 
 int main(void) {
   while (1) {
-    int h, w, player_id, tick;
-    scanf("%d%d%d%d", &w, &h, &player_id, &tick);
+    int n, player_id, tick;
+    scanf("%d%d%d\n", &n, &player_id, &tick);
 
-    // read map
-    for (int i = 0; i < h; i++) {
-      char line[w + 1];
-      scanf("%s", line);
+    // read cities
+    for (int i = 0; i < n; i++) {
+      char *line = NULL;
+      size_t len = 0;
+      ssize_t lineSize = 0;
+      lineSize = getline(&line, &len, stdin);
+      free(line);
     }
 
-    // number of entities
-    int n;
-    scanf("%d", &n);
-    getchar();
+    // number of movements
+    int m;
+    scanf("%d\n", &m);
 
-    // read entities
-    for (int i = 0; i < n; i++) {
-      char ent_type;
-      int p_id, x, y, param_1, param_2;
-
-      scanf("%c%d%d%d%d%d", &ent_type, &p_id, &x, &y, &param_1, &param_2);
-      getchar();
+    // read movements
+    for (int i = 0; i < m; i++) {
+      char *line =NULL;
+      size_t len = 0;
+      ssize_t lineSize = 0;
+      lineSize = getline(&line, &len, stdin);
+      free(line);
     }
 
     // use fprintf(stderr, ...) to print for debugging
     fprintf(stderr, "debug code\n");
 
-    // this will choose one of random actions
-    const char actions[][10] = {"left", "right", "up", "down", "stay"};
-    int random_index = rand() % 5;
-
     // bot action
-    printf("%s\n", actions[random_index]);
+    printf("100 100 200 200\n");
     fflush(stdout);
   }
 

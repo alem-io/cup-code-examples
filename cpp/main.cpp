@@ -4,43 +4,33 @@ using namespace std;
 
 int main() {
     while (true) {
-        int h, w, player_id, tick;
-        cin >> w >> h >> player_id >> tick;
+        int n, m, player_id, tick;
+        string str;
+        cin >> n >> player_id >> tick;
 
-        cerr << w << h << player_id << tick << endl;
+        cerr n << player_id << tick << endl;
 
-        // read map
-        for (int i = 0; i < h; i++) {
-            for (int j = 0; j < w; j++) {
-                char c;
-                cin >> c;
-            }
+        // read cities
+        for (int i = 0; i < n; i++) {
+            getline(cin, str)
         }
 
         // number of entities
-        int n;
-        cin >> n;
+        cin >> m;
 
-        cerr << "n:" << n << endl;
+        cerr << "m:" << m << endl;
 
         // read entities
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < m; i++) {
             string type;
-            int p_id, x, y, param_1, param_2;
-
-            cin >> type >> p_id >> x >> y >> param_1 >> param_2;
-            cerr << type << p_id << x << y << param_1 << param_2 << endl;
+            getline(cin, str)
         }
 
         // use `cerr` to print for debugging
         cerr << "debug code" << endl;
 
         // this will choose one of random actions
-        const string actions[] = {"left", "right", "up", "down", "stay"};
-        int random_index = rand() % 5;
-
-        // bot action
-        cout << actions[random_index] << endl;
+        cout << "100 100 200 200";
     }
 
     return 0;
