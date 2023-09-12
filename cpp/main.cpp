@@ -31,6 +31,7 @@ int main() {
 
         // this will choose one of random actions
         cout << "100 100 200 200\n";
+        fflush(stdout);
     }
 
     return 0;
