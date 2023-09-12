@@ -8,11 +8,11 @@ int main() {
         string str;
         cin >> n >> player_id >> tick;
 
-        cerr n << player_id << tick << endl;
+        cerr << n << player_id << tick << endl;
 
         // read cities
         for (int i = 0; i < n; i++) {
-            getline(cin, str)
+            getline(cin, str);
         }
 
         // number of entities
@@ -23,14 +23,14 @@ int main() {
         // read entities
         for (int i = 0; i < m; i++) {
             string type;
-            getline(cin, str)
+            getline(cin, str);
         }
 
         // use `cerr` to print for debugging
         cerr << "debug code" << endl;
 
         // this will choose one of random actions
-        cout << "100 100 200 200";
+        cout << "100 100 200 200\n";
     }
 
     return 0;
