@@ -30,8 +30,7 @@ int main() {
         cerr << "debug code" << endl;
 
         // this will choose one of random actions
-        cout << "100 100 200 200\n";
-        fflush(stdout);
+        cout << "100 100 200 200" << endl;
     }
 
     return 0;
